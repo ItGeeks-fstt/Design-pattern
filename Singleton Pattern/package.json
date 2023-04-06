@@ -1,0 +1,19 @@
+{
+  "name": "singleton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "before": "node before.js",
+    "after": "node after.js  ",
+    "init": " tsc --init"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^5.2.0",
+    "typescript": "^5.0.3"
+  }
+}
