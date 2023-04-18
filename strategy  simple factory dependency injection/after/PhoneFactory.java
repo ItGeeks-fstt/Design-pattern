@@ -5,6 +5,7 @@ import after.Charge.MicroUsb;
 import after.Charge.TypeC;
 import after.MakeCall.CellCall;
 import after.MakeCall.ICanMakeCallStrategy;
+import after.MakeCall.InternationalCall;
 import after.MakeCall.VideoCall;
 import after.OpenCamera.ICanOpenCameraStrategy;
 import after.OpenCamera.DualCamera;
@@ -13,27 +14,30 @@ import after.UnlockScreen.FaceUnlock;
 import after.UnlockScreen.FingerprintUnlock;
 import after.UnlockScreen.ICanUnlockScreenStrategy;
 
-
 public class PhoneFactory {
     public Phone makePhone(CallType callType, CameraType cameraType, UnlockType unlockType, ChargeType chargeType) {
 
-//        this place will be like a factory which one place to configure all the phone possibilities
+        // this place will be like a factory which one place to configure all the phone
+        // possibilities
         ICanMakeCallStrategy makeCallStrategy;
         ICanOpenCameraStrategy openCameraStrategy;
         ICanUnlockScreenStrategy unlockScreenStrategy;
         ICanChargeStrategy chargeStrategy;
 
-        switch (callType){
+        switch (callType) {
             case VIDEO:
                 makeCallStrategy = new VideoCall();
                 break;
             case VOICE:
-                    makeCallStrategy= new CellCall();
-                    break;
+                makeCallStrategy = new CellCall();
+                break;
+            case International:
+                makeCallStrategy = new InternationalCall();
+                break;
             default:
                 throw new RuntimeException("Invalid call type");
         }
-        switch (cameraType){
+        switch (cameraType) {
             case DUAL:
                 openCameraStrategy = new DualCamera();
                 break;
@@ -43,7 +47,7 @@ public class PhoneFactory {
             default:
                 throw new RuntimeException("Invalid camera type");
         }
-        switch (unlockType){
+        switch (unlockType) {
             case FACE:
                 unlockScreenStrategy = new FaceUnlock();
                 break;
@@ -53,7 +57,7 @@ public class PhoneFactory {
             default:
                 throw new RuntimeException("Invalid unlock type");
         }
-        switch (chargeType){
+        switch (chargeType) {
             case C:
                 chargeStrategy = new TypeC();
                 break;
@@ -64,6 +68,6 @@ public class PhoneFactory {
                 throw new RuntimeException("Invalid charge type");
         }
 
-        return new Phone(makeCallStrategy,openCameraStrategy,unlockScreenStrategy,chargeStrategy);
+        return new Phone(makeCallStrategy, openCameraStrategy, unlockScreenStrategy, chargeStrategy);
     }
 }

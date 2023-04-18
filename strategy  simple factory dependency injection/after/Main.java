@@ -10,13 +10,17 @@ public class Main {
         phone.unlockScreen();
         phone.charge();
         System.out.println("phone with voice call, single camera, fingerprint unlock, micro usb charge");
-        Phone Anotherphone = phoneFactory.makePhone(CallType.VOICE, CameraType.SINGLE, UnlockType.FINGERPRINT, ChargeType.USB_2_MICRO);
+        Phone Anotherphone = phoneFactory.makePhone(CallType.VOICE, CameraType.SINGLE, UnlockType.FINGERPRINT,
+                ChargeType.USB_2_MICRO);
         Anotherphone.makeCall();
         Anotherphone.openCamera();
         Anotherphone.unlockScreen();
         Anotherphone.charge();
-//         you see know you can add more options to the phone without changing the code
-//         create any type of phone you want with any type of options you want
+        // Phone lastPhone=phoneFactory.makePhone(CallType.International, null, null,
+        // null)
+
+        // you see know you can add more options to the phone without changing the code
+        // create any type of phone you want with any type of options you want
 
     }
 }
