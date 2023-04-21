@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/CommandePattern/CommandePattern.iml" filepath="$PROJECT_DIR$/CommandePattern/CommandePattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/Decorator/Decorator.iml" filepath="$PROJECT_DIR$/Decorator/Decorator.iml" />
       <module fileurl="file://$PROJECT_DIR$/Design-pattern.iml" filepath="$PROJECT_DIR$/Design-pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fibonacci Memoization And Dynamic Programming/Fibonacci Memoization And Dynamic Programming.iml" filepath="$PROJECT_DIR$/Fibonacci Memoization And Dynamic Programming/Fibonacci Memoization And Dynamic Programming.iml" />
       <module fileurl="file://$PROJECT_DIR$/ObserverPattern/ObserverPattern.iml" filepath="$PROJECT_DIR$/ObserverPattern/ObserverPattern.iml" />
     </modules>
   </component>
