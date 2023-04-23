@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Abstract factory/Abstract factory.iml" filepath="$PROJECT_DIR$/Abstract factory/Abstract factory.iml" />
       <module fileurl="file://$PROJECT_DIR$/Adapter/Adapter.iml" filepath="$PROJECT_DIR$/Adapter/Adapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/CommandePattern/CommandePattern.iml" filepath="$PROJECT_DIR$/CommandePattern/CommandePattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/Decorator/Decorator.iml" filepath="$PROJECT_DIR$/Decorator/Decorator.iml" />
