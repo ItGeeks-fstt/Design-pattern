@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Abstract factory/Abstract factory.iml" filepath="$PROJECT_DIR$/Abstract factory/Abstract factory.iml" />
       <module fileurl="file://$PROJECT_DIR$/Adapter/Adapter.iml" filepath="$PROJECT_DIR$/Adapter/Adapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/CommandePattern/CommandePattern.iml" filepath="$PROJECT_DIR$/CommandePattern/CommandePattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/Decorator/Decorator.iml" filepath="$PROJECT_DIR$/Decorator/Decorator.iml" />
       <module fileurl="file://$PROJECT_DIR$/Design-pattern.iml" filepath="$PROJECT_DIR$/Design-pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fibonacci Memoization And Dynamic Programming/Fibonacci Memoization And Dynamic Programming.iml" filepath="$PROJECT_DIR$/Fibonacci Memoization And Dynamic Programming/Fibonacci Memoization And Dynamic Programming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Iterator/Iterator.iml" filepath="$PROJECT_DIR$/Iterator/Iterator.iml" />
       <module fileurl="file://$PROJECT_DIR$/ObserverPattern/ObserverPattern.iml" filepath="$PROJECT_DIR$/ObserverPattern/ObserverPattern.iml" />
     </modules>
   </component>
